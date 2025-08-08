@@ -1,24 +1,24 @@
 package All_Actions;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Input_area {
+public class Scroll {
 
 	public static void main(String[] args) throws InterruptedException {
-		
-		
+		// TODO Auto-generated method stub
+
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Sylesh");
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Sylesh@gmail.com");
-		driver.findElement(By.xpath("//input[@id='phone']")).sendKeys("1234567890");
-		System.out.println("Test is Passed successfully...");
-		Thread.sleep(3000);
+		WebElement radiobutton = driver.findElement(By.xpath("//input[@id='male']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", radiobutton);
+		Thread.sleep(5000);
 		driver.quit();
-
 	}
 
 }
