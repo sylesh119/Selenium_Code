@@ -16,10 +16,15 @@ public class Doubleclick {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
 		WebElement click = driver.findElement(By.xpath("//button[text()='Copy Text']"));
+		WebElement scroll = driver.findElement(By.xpath("//h2[text()='Double Click']"));
+		WebElement ctext = driver.findElement(By.id("field2"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", click);
+		js.executeScript("arguments[0].scrollIntoView(true);", scroll);
 		Actions dbclick = new Actions(driver);
-		dbclick.doubleClick(click);
+		dbclick.doubleClick(click).build().perform();
+		Thread.sleep(5000);
+//		js.executeScript("arguments[0].dbClick();",click);
+		System.out.println(ctext.getDomProperty("value"));
 		Thread.sleep(5000);
 		driver.quit();
 	}
