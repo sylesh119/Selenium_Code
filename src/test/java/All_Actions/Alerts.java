@@ -38,7 +38,7 @@ public class Alerts {
 		driver.findElement(By.id("promptBtn")).click();
 		Thread.sleep(3000);
 		Alert myalert = driver.switchTo().alert();
-		myalert.sendKeys("charan");
+		myalert.sendKeys("sylesh");
 		myalert.accept();
 		WebElement text = driver.findElement(By.xpath("//p[@id='demo']"));
 		System.out.println(text.getText());
