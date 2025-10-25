@@ -10,7 +10,7 @@ public class hello {
 		System.out.print("enter first number:");
 		int a = sc.nextInt();
 		
-		System.out.print("enter second number:");
+		System.out.print("enter 2Nd number:");
 		int b = sc.nextInt();
 		
 		int c = a+b;
