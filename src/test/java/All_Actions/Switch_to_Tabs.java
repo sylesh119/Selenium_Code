@@ -19,9 +19,9 @@ public class Switch_to_Tabs {
 		WebElement newtab = driver.findElement(By.xpath("//button[@onclick=\"myFunction()\"]"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", newtab);
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		newtab.click();
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		System.out.println(driver.getCurrentUrl());
 		Set <String> alltabs =driver.getWindowHandles();
 		for(String s:alltabs)
