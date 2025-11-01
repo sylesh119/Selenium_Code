@@ -12,9 +12,9 @@ public class hello {
 		arr.add(null);
 		arr.add(2, "daya");
 		arr.add("vijay");
-		// arr.removeFirst();
-		System.out.println(arr.size());
-		if (arr.contains("daya")) {
+		arr.removeFirst();
+		System.out.println(arr);
+		if (arr.contains("dayas")) {
 			System.out.println("he is dumb");
 		} else {
 			System.out.println("he is good");
