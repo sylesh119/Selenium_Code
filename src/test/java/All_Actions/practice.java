@@ -10,8 +10,8 @@ public class practice {
 	        HashMap<Integer, String> employeeMap = new HashMap<>();
 
 	        // Data onboarding – mapping Employee ID to Employee Name
-	        employeeMap.put(101, "Arjun");
-	        employeeMap.put(102, "Neha");
+	        employeeMap.put(101, "sylesh");
+	        employeeMap.put(102, "shcs");
 	        employeeMap.put(103, "Ravi");
 	        employeeMap.put(104, "Priya");
 
