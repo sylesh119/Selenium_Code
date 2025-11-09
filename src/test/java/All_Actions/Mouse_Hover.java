@@ -21,7 +21,7 @@ public class Mouse_Hover {
 		js.executeScript("arguments[0].scrollIntoView(true);", text);
 		Actions ac = new Actions(driver);
 		ac.moveToElement(Hover);
-		Thread.sleep(1200);
+		Thread.sleep(4000);
 		driver.quit();
 	}
 

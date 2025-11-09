@@ -33,7 +33,7 @@ public class Switch_to_Tabs {
 			}
 		}
 		System.out.println(driver.getCurrentUrl());
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		driver.quit();
 	}
 
