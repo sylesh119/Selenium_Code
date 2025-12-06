@@ -16,7 +16,7 @@ public class practice {
 	        employeeMap.put(104, "haris");
 
 	        // Data retrieval – accessing specific employee information
-	        System.out.println("Employee with ID 102: " + employeeMap.get(102));
+	        System.out.println("Employee with ID 675: " + employeeMap.get(102));
 
 	        // Iterating through the Map –X enterprise-grade visibility
 	        System.out.println("\n--- Employee Directory ---");
