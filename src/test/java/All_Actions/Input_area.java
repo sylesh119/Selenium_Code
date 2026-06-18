@@ -12,8 +12,8 @@ public class Input_area {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Charan");
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("stricharan@gmail.com");
+		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("sylesh");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("sylesh@gmail.com");
 		driver.findElement(By.xpath("//input[@id='phone']")).sendKeys("1234522267");
 		System.out.println("Test is Passed successsssfully...");
 		Thread.sleep(3000);
