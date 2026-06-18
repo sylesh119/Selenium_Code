@@ -15,7 +15,7 @@ public class Input_area {
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Sylesh_911");
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Sylesh@gmail.com");
 		driver.findElement(By.xpath("//input[@id='phone']")).sendKeys("1234522267");
-		System.out.println("Test is Passed successfully...");
+		System.out.println("Test is Passed successsssfully...");
 		Thread.sleep(3000);
 		driver.quit();
 
